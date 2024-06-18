@@ -71,14 +71,34 @@
 
 
 /* (4) JSX 내부에 자바스크립트 표현식 사용 -> 코드를 {} 로 감싼다. */
+// import React from "react";
+// function App() {
+//   const name = "리액트111";
+//   return (
+//     <>
+//       <h1>{name} 안녕???!</h1>
+//       <h2>잘 작동하니???!</h2>
+//     </>
+//   );
+// }
+
+// export default App;
+
+
+/* (5) JSX 내부에 자바스크립트 표현식 사용 -> {} 내부에 '조건부 연산자' 사용 */
 import React from "react";
+
 function App() {
-  const name = "리액트111";
+  // const name = '리액트';
+  const name = '뤼액트';
   return (
-    <>
-      <h1>{name} 안녕???!</h1>
-      <h2>잘 작동하니???!</h2>
-    </>
+    <div>
+      {name == '리액트' ? (
+        <h1>리액트입니다.</h1>
+      ) : (
+        <h2>리액트가 아닙니다.</h2>
+      )}
+    </div>
   );
 }
 
