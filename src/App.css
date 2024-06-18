@@ -1,4 +1,5 @@
-.App {
+/* 최초 내용 */
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +36,13 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+/* (1) 기존 css 에서 class 속성 대신 className 사용 */
+.react {
+  background: aqua;
+  color: black;
+  font-size: 48px;
+  font-weight: bold;
+  padding: 16px;
 }
