@@ -42,13 +42,28 @@
 
 
 /* div 요소로 묶지 않고 Fragment 기능 사용 (리액트 v16 이상부터 적용된 기능) */
-import React, {Fragment} from "react";
+// import React, {Fragment} from "react";
+// function App() {
+//   return (
+//     <Fragment>
+//       <h1>리액트 안녕?!</h1>
+//       <h2>잘 작동하니?!</h2>
+//     </Fragment>
+//   );
+// }
+
+// export default App;
+
+
+/* Fragment 또다른 표현 방법 */
+import React from "react";
+
 function App() {
   return (
-    <Fragment>
-      <h1>리액트 안녕?!</h1>
-      <h2>잘 작동하니?!</h2>
-    </Fragment>
+    <>
+      <h1>리액트 안녕??!</h1>
+      <h2>잘 작동하니??!</h2>
+    </>
   );
 }
 
